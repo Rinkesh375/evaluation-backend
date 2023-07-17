@@ -4,6 +4,8 @@ const router = express.Router();
 const User = require("../Model/userModel")
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
+
+
 require("dotenv").config();
 
 const authMiddleWare = async(req,resp,next)=>{
